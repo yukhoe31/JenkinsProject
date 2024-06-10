@@ -8,16 +8,16 @@ import org.springframework.web.servlet.ModelAndView;
 public class ShopController {
 
 	@GetMapping("/")
-	public String start() {
-		
+	public String start()
+	{
 		return "redirect:shop/list";
 	}
 	
 	@GetMapping("/shop/list")
-	public ModelAndView list() {
-		ModelAndView model = new ModelAndView();
+	public ModelAndView list()
+	{
+		ModelAndView model=new ModelAndView();
 		model.setViewName("gitshop/shoplist");
 		return model;
 	}
-	
 }
